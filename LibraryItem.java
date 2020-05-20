@@ -4,17 +4,19 @@ public class LibraryItem {
     // properties
     private boolean isAvailable, isOverdue;
     private String borrower;// find a way to intergrate Card Holder class
-    private String checkOutDate, returnDate;
+    private String checkOutDate, returnDate, title, location;
     private int numOfCopies;
 
     // default constuctor
     public LibraryItem(boolean isAvailable, boolean isOverdue, String borrower, String checkOutDate, String returnDate,
-            int numOfCopies) {
+            int numOfCopies, String location, String title) {
         this.isAvailable = isAvailable;
         this.isOverdue = isOverdue;
         this.borrower = borrower;
         this.checkOutDate = checkOutDate;
         this.returnDate = returnDate;
+        this.title = title;
+        this.location = location;
         this.numOfCopies = numOfCopies;
     }
 
@@ -22,6 +24,10 @@ public class LibraryItem {
     public LibraryItem(boolean isAvailable, int numOfCopies) {
         this.isAvailable = isAvailable;
         this.numOfCopies = numOfCopies;
+    }
+
+    public LibraryItem(boolean isAvailable2, boolean isOverdue2, String borrower2, String checkOutDate2,
+            String returnDate2, int numOfCopies2, String location2, String title2) {
     }
 
     // getters & setters
@@ -71,6 +77,22 @@ public class LibraryItem {
 
     public void setNumOfCopies(int numOfCopies) {
         this.numOfCopies = numOfCopies;
+    }
+
+    public String getTitle() {
+        return title;
+    }
+
+    public void setTitle(String title) {
+        this.title = title;
+    }
+
+    public String getLocation() {
+        return location;
+    }
+
+    public void setLocation(String location) {
+        this.location = location;
     }
 
     @Override

@@ -1,6 +1,6 @@
 public class Book extends LibraryItem {
 
-    private String genre;
+    private String genre;// implement enums
     private int numOfPages;
 
     public Book(boolean isAvailable, boolean isOverdue, String borrower, String checkOutDate, String returnDate,
