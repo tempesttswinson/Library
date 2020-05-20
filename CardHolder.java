@@ -1,8 +1,10 @@
 public class CardHolder {
 
+    // properties
     private String name, dateJoined;
     private boolean canCheckOut, canReserve;
 
+    // constuctor
     public CardHolder(String name, String dateJoined, boolean canCheckOut, boolean canReserve) {
         this.name = name;
         this.dateJoined = dateJoined;
@@ -10,6 +12,7 @@ public class CardHolder {
         this.canReserve = canReserve;
     }
 
+    // getters and setters
     public String getName() {
         return name;
     }

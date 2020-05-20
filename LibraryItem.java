@@ -26,10 +26,6 @@ public class LibraryItem {
         this.numOfCopies = numOfCopies;
     }
 
-    public LibraryItem(boolean isAvailable2, boolean isOverdue2, String borrower2, String checkOutDate2,
-            String returnDate2, int numOfCopies2, String location2, String title2) {
-    }
-
     // getters & setters
     public boolean isAvailable() {
         return isAvailable;
