@@ -1,5 +1,5 @@
 
-public class LibraryItem {
+public class LibraryItem implements Reservable, Loanable {
 
     // properties
     private boolean isAvailable, isOverdue;
@@ -20,7 +20,7 @@ public class LibraryItem {
         this.numOfCopies = numOfCopies;
     }
 
-    // constuctor for when the item has not be borrowed by anyone
+    // constuctor for when the item has not been borrowed by anyone
     public LibraryItem(boolean isAvailable, int numOfCopies) {
         this.isAvailable = isAvailable;
         this.numOfCopies = numOfCopies;
@@ -94,6 +94,16 @@ public class LibraryItem {
     @Override
     public String toString() {
         return "LibraryItem [isAvailable=" + isAvailable + ", numOfCopies=" + numOfCopies + "]";
+    }
+
+    @Override
+    public boolean canReserve() {
+        return false;
+    }
+
+    @Override
+    public boolean canLoan() {
+        return false;
     }
 
 }
