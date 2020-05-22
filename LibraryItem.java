@@ -106,4 +106,9 @@ public class LibraryItem implements Reservable, Loanable {
         return false;
     }
 
+    @Override
+    public int getLoanTerm() {
+        return 0;
+    }
+
 }
